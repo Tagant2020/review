@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register_title">Create account</string>
+    <string name="register_button">Register</string>
+    <string name="register_login_button">Sign In</string>
+    <string name="register_error_passwords_mismatch">Passwords are different</string>
+    <string name="register_error_email_already_taken">Email already linked to an account</string>
+</resources>

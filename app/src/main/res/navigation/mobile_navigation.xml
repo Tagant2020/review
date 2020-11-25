@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_scan">
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.epitech.cashmanager.ui.cart.CartFragment"
+        android:label="@string/cart_title"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="com.epitech.cashmanager.ui.scan.ScanFragment"
+        android:label="@string/scan_title"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/nav_from_scan_toscanned_product"
+            app:destination="@id/navigation_product_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.epitech.cashmanager.ui.settings.SettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/navigation_product_fragment"
+        android:name="com.epitech.cashmanager.ui.scan.scannedProduct.ScannedProductFragment"
+        android:label="fragment_scanned_product"
+        tools:layout="@layout/fragment_scanned_product" />
+</navigation>
